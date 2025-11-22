@@ -17,6 +17,12 @@ export default defineType({
             type: 'boolean',
         }),
         defineField({
+            name: 'msrp',
+            title: 'MSRP',
+            type: 'number',
+            validation: (Rule) => Rule.min(0).precision(2),
+        }),
+        defineField({
             name: 'tags',
             title: 'Tags',
             type: 'array',
@@ -101,12 +107,7 @@ export default defineType({
             title: 'Image URL',
             type: 'string',
         }),
-        defineField({
-            name: 'msrp',
-            title: 'MSRP',
-            type: 'number',
-            validation: (Rule) => Rule.min(0).precision(2),
-        }),
+
         defineField({
             name: 'age',
             title: 'Recommended Age',
