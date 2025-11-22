@@ -12,10 +12,10 @@ export default defineType({
             validation: (Rule) => Rule.required(),
         }),
         defineField({
-            name: 'items',
-            title: 'Items',
+            name: 'materials',
+            title: 'Materials',
             type: 'array',
-            of: [{ type: 'reference', to: [{ type: 'Materials' }] }],
+            of: [{ type: 'reference', to: [{ type: 'material' }] }],
         }),
     ]
 })
