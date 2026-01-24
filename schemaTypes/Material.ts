@@ -119,6 +119,11 @@ export default defineType({
             type: 'string'
         }),
         defineField({
+            name: 'pieceCount',
+            title: 'Puzzle Piece Count',
+            type: 'number'
+        }),
+        defineField({
             name: 'categories',
             title: 'Categories',
             type: 'array',
